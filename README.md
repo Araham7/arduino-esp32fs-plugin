@@ -3,15 +3,45 @@
 Arduino plugin which packs sketch data folder into SPIFFS filesystem image,
 and uploads the image to ESP32 flash memory.
 
+# ESP32FS Plugin Installation Guide
+
 ## Installation
 
-- Make sure you use one of the supported versions of Arduino IDE and have ESP32 core installed.
-- Download the tool archive from [releases page](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/latest).
-- In your Arduino sketchbook directory, create tools directory if it doesn't exist yet.
-- Unpack the tool into tools directory (the path will look like ```<home_dir>/Arduino/tools/ESP32FS/tool/esp32fs.jar```).
-- Restart Arduino IDE. 
+### For **Windows**:
 
-On the OS X create the tools directory in ~/Documents/Arduino/ and unpack the files there
+1. Make sure you're using one of the **supported versions of the Arduino IDE (Arduino 1.x.x)** and have the **ESP32 core** installed.
+2. Download the tool archive from the [releases page](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/latest).
+3. In your Arduino sketchbook directory, create a `tools` directory if it doesn't already exist.
+4. Unpack the downloaded archive into the `tools` directory. The final path should look like:  
+```
+<home_dir>/Arduino/tools/ESP32FS/tool/esp32fs.jar
+```
+5. Restart the Arduino IDE.
+
+> **Note for macOS (OS X):**  
+> Create the `tools` directory inside `~/Documents/Arduino/` and extract the files there.
+
+---
+
+### For **Linux** (including Raspberry Pi):
+
+1. Ensure you're using a **supported version of Arduino IDE (Arduino 1.x.x)** and have the **ESP32 core** installed.
+2. Download the tool archive from the [releases page](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/latest).
+3. Open Arduino IDE, go to `File` > `Preferences`, and **copy the Sketchbook location** (e.g., `/home/YourUsername/Arduino`).
+4. Navigate to that location in your file system.
+5. Create a `tools` folder (if it doesn't exist), and unzip the `ESP32FS-1.1.zip` file inside it.
+6. Ensure the extracted structure looks like this:
+```
+/home/YourUsername/Arduino/tools/ESP32FS/tool/esp32fs.jar
+```
+7. Restart the Arduino IDE.
+
+---
+
+> **IMPORTANT NOTE:**  
+> To learn how to upload SPIFFS files, you can check out the many tutorials available on YouTube.
+
+
 
 ## Usage
 
